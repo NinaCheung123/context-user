@@ -1,0 +1,21 @@
+[project]
+name = "context-user"
+version = "0.1.0"
+description = "Accumulate developer context from agent sessions and sync it to Claude Code and Cursor"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+cu = "context_user.cli:main"
+context-user = "context_user.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["context_user"]

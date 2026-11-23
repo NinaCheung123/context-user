@@ -1,0 +1,11 @@
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+# study data contains your prompts
+sessions.csv
+labels.csv
+phases.csv
+lessons.csv
+build/
+dist/
